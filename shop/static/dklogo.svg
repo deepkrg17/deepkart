@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0%" y="0%"
+	width="100%" height="100%"
+	viewBox="0 0 24.0 24.0"
+	enable-background="new 0 0 24.0 24.0"
+	xml:space="preserve">
+<defs>
+	<style type="text/css">
+		@font-face {
+			font-family: 'sirinStencil'; 
+			<!--src: url('./sirinStencil.ttf');-->
+		}
+	</style>
+</defs>
+	<path
+		fill="#00FEFF"
+		stroke="#000000"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M0.00,0.00L24.00,0.00L24.00,24.00L0.00,24.00z"/>
+
+	<text 
+		font-size="15.60268"
+		font-family="sirinStencil"
+		stroke-width="0.44162753"
+		stroke="#000000"
+		stroke-opacity="1.000"
+		fill-opacity="0"
+		text-anchor="start"
+  		transform="rotate(-0.0 8.72518 12.939325) scale(1.2692578 1.0)" >
+		<tspan x="2.8097377" y="17.083826">d</tspan>
+	</text> 
+
+	<text 
+		font-size="15.60268"
+		font-family="sirinStencil"
+		fill="#06FFC7"
+		stroke-width="0"
+		fill-opacity="1.000"
+		text-anchor="start"
+  		transform="rotate(-0.0 8.72518 12.939325) scale(1.2692578 1.0)" >
+
+		<tspan x="2.8097377" y="17.083826">d</tspan>
+	</text>
+
+	<text 
+		font-size="16.280252"
+		font-family="sirinStencil"
+		stroke-width="0.45167184"
+		stroke="#000000"
+		stroke-opacity="1.000"
+		fill-opacity="0"
+		text-anchor="start"
+  		transform="rotate(-0.0 14.184456 12.951916) scale(1.1745491 1.0)" >
+		<tspan x="8.348011" y="17.276915">k</tspan>
+	</text> 
+
+	<text 
+		font-size="16.280252"
+		font-family="sirinStencil"
+		fill="#06FFC7"
+		stroke-width="0"
+		fill-opacity="1.000"
+		text-anchor="start"
+  		transform="rotate(-0.0 14.184456 12.951916) scale(1.1745491 1.0)" >
+
+		<tspan x="8.348011" y="17.276915">k</tspan>
+	</text>
+</svg>

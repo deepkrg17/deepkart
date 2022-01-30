@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'shop/base.css' %}" type="text/css" media="all" />
+    {% block styles %}
+    {% endblock %}
+    <title>deepkart</title>
+</head>
+<body>
+    <nav id="nav">
+        <div id="sideNav" class="sidenav">
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <div id="navbar">
+            <span class="openbtn" onclick="openNav()">&#9776;</span>
+            <a href="/" id="dkname">deepkart</a>
+            <a href="/search/" style="font-size:30px;transform:rotate(-38deg);font-weight: bold;" class="navbtn">&#x26b2;</a>
+            <a href="/cart/" class="navbtn">&#128722;</a>
+            <a href="/login/" class="navbtn">Login</a>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <script src="{% static 'shop/base.js' %}" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

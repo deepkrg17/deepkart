@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for cat, prods in allProds.items %}
+<div class="category">
+    <h3 class="title">{{cat}} - Recommended Items</h3>
+    <div class="container">
+    {% for prod in prods %}
+        <div class="card" onclick="toProd({{prod.id}})">
+            <img src="media/{{prod.image}}" alt="{{prod.name}}" style="width:100%">
+            <h4 class="prod_name">{{prod.name}}</h4>
+            <p class="desc">{{prod.desc}}</p>
+            <p class="price">₹{{prod.price}}</p>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endfor %}
+{%endblock%}

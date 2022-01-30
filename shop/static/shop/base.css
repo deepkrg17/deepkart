@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'sirinStencil';
+    src: url('/static/sirinStencil.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+::selection {
+    background-color: #00ccff;
+    color: black;
+}
+
+/* The Side Navigation Menu */
+.sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 7px;
+    color: white;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* Navigation Bar */
+#navbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #00ccff;
+}
+#navbar .openbtn {
+    font-size: 20px;
+    padding: 0 0.5rem;
+}
+#dkname {
+    font-family: sirinStencil;
+    font-size: 30px;
+    padding-bottom: 6px;
+    flex: 1;
+}
+#navbar .navbtn {
+    font-size: 17px;
+    padding: 0 7px;
+}
+
+/* Product View Card */
+.title {
+    margin: 5px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin: 1vw;
+    width: 48vw;
+    max-width: 300px;
+}
+.card .prod_name, .card .desc {
+    padding: 2px 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card .desc {
+    font-size: 0.5rem;
+}
+.card .price {
+    color: grey;
+    margin-bottom: 3px;
+    padding: 0 7px;
+}
+.card button:hover {
+    opacity: 0.7;
+}

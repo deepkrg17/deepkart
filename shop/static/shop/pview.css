@@ -1,0 +1,29 @@
+h2 {
+    text-align: center;
+     margin: 10px;
+}
+
+ul {
+    padding: 20px;
+}
+
+.prodimg {
+    width: 300px;
+    height: 300px;
+    padding: 5px 30px;
+}
+
+.desc {
+    margin: 5px 10px;
+}
+
+.specs {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 15px;
+    margin: 2px 0;
+}
+
+.specs span:first-child {
+  color: grey;
+}

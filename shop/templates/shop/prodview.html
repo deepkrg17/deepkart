@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "shop/pview.css" %}" type="text/css" media="all" />
+{% endblock %}
+
+{% block content %}
+<h2>{{prod.name}}</h2>
+<div>
+    <img class="prodimg" src="/media/{{prod.image}}" alt="">
+</div>
+<p class="desc">{{prod.desc}}</p>
+<p class="desc price">₹{{prod.price}}</p>
+<ul>
+{% for key, value in prod.details.items %}
+    <li class="specs">
+        <span>{{key}}</span>
+        <span>{{value}}</span>
+    </li>
+{% endfor %}
+</ul>
+<p></p>
+{%endblock%}
